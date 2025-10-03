@@ -1,17 +1,11 @@
-import {
-  SignedIn,
-  SignedOut,
-  SignOutButton,
-  SignUpButton,
-  UserButton,
-} from "@clerk/nextjs";
-
-import { Button } from "@/components/ui/button";
+import { HeroHeader } from "@/components/header";
+import HeroSection from "@/components/hero-section";
 
 const Home = () => {
   return (
-    <div>
-      <UserButton />
+    <div className="min-h-screen">
+      <HeroHeader />
+      <HeroSection />
     </div>
   );
 };
